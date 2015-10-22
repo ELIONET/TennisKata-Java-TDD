@@ -3,6 +3,7 @@ public class TennisGame
 {
 	public final static String LOVE_ALL = "love-all";
 	public final static String FIFTEEN_LOVE = "fifteen-love";
+	public final static String LOVE_FIFTEEN = "love-fifteen";
 	
 	private String score;
 	
@@ -19,7 +20,7 @@ public class TennisGame
 	}
 
 	public void receiverScores() {
-		this.score="love-fifteen";
+		this.score=LOVE_FIFTEEN;
 		
 	}
 
