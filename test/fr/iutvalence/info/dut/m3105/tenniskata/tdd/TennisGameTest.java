@@ -17,8 +17,7 @@ public class TennisGameTest
 	public void testIsScoreFifteenLoveForServer()
 	{
 		TennisGame game = new TennisGame();
-		game.serverScores();
-		
+		game.serverScores();		
 		Assert.assertEquals(game.getScore(),"fifteen-love");
 	}
 	
