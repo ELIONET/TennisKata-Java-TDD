@@ -18,8 +18,12 @@ public class TennisGameTest
 	{
 		TennisGame game = new TennisGame();
 		game.serverScores();		
-		Assert.assertEquals(game.getScore(),"fifteen-love");
+		Assert.assertEquals(game.getScore(),TennisGame.FIFTEEN_LOVE);
 	}
 	
-
+	public void testIsScoreLoveFifteenForServer(){
+	TennisGame game = new TennisGame();
+	game.receiverScores();
+	Assert.assertEquals(game.getScore(),"love-fifteen");
+	}
 }
