@@ -18,6 +18,11 @@ public class TennisGame
 		this.score=FIFTEEN_LOVE;
 	}
 
+	public void receiverScores() {
+		this.score="love-fifteen";
+		
+	}
+
 
 	
 }
