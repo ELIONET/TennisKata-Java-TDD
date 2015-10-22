@@ -23,8 +23,16 @@ public class TennisGameTest
 	
 	@Test
 	public void testIsScoreLoveFifteenForServer(){
-	TennisGame game = new TennisGame();
-	game.receiverScores();
-	Assert.assertEquals(game.getScore(),TennisGame.LOVE_FIFTEEN);
+		TennisGame game = new TennisGame();
+		game.receiverScores();
+		Assert.assertEquals(game.getScore(),TennisGame.LOVE_FIFTEEN);
+	}
+	
+	@Test
+	public void testIsScoreFifteenAll(){
+		TennisGame game = new TennisGame();
+		game.serverScores();
+		game.receiverScores();
+		Assert.assertEquals(game.getScore(), "fifteen-all");
 	}
 }
