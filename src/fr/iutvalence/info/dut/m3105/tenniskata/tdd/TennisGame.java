@@ -4,6 +4,7 @@ public class TennisGame
 	public final static String LOVE_ALL = "love-all";
 	public final static String FIFTEEN_LOVE = "fifteen-love";
 	public final static String LOVE_FIFTEEN = "love-fifteen";
+	public final static String FIFTEEN_ALL = "fifteen-all";
 	
 	private String score;
 	
@@ -19,14 +20,14 @@ public class TennisGame
 		if(this.score==LOVE_ALL)
 			this.score=FIFTEEN_LOVE;
 		else
-			this.score="fifteen-all";
+			this.score=FIFTEEN_ALL;
 	}
 
 	public void receiverScores() {
 		if(this.score==LOVE_ALL)
 			this.score=LOVE_FIFTEEN;
 		else
-			this.score="fifteen-all";
+			this.score=FIFTEEN_ALL;
 	}
 
 

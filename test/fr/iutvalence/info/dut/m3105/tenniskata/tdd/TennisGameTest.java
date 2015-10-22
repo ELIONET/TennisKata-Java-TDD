@@ -33,6 +33,6 @@ public class TennisGameTest
 		TennisGame game = new TennisGame();
 		game.serverScores();
 		game.receiverScores();
-		Assert.assertEquals(game.getScore(), "fifteen-all");
+		Assert.assertEquals(game.getScore(),TennisGame.FIFTEEN_ALL);
 	}
 }
