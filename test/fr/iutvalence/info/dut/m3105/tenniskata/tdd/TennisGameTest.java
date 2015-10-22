@@ -9,9 +9,8 @@ public class TennisGameTest
 	@Test
 	public void testIsInitialScoreLoveAll()
 	{
-		TennisGame game = new TennisGame();
-		
-		Assert.assertEquals(game.getScore(),"love-all");
+		TennisGame game = new TennisGame();	
+		Assert.assertEquals(game.getScore(),TennisGame.LOVE_ALL);
 	}
 	
 	
